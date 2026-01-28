@@ -1,7 +1,7 @@
 // ===================================
 // Language Switcher
 // ===================================
-let currentLang = localStorage.getItem('language') || 'en';
+let currentLang = localStorage.getItem('language') || 'de';
 
 // Translation mapping for elements
 const translationMap = {
