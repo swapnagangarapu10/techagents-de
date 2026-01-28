@@ -1,0 +1,28 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore logs
+*.log
+npm-debug.log*
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore build outputs (if you add a build process later)
+dist/
+build/
+
+# Ignore package-lock if using npm (optional)
+# package-lock.json
