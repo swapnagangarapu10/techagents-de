@@ -1,0 +1,45 @@
+Services Section:
+- AI Websites → KI-Websites
+- Intelligent, responsive websites... → Intelligente, responsive Websites, die sich an das Nutzerverhalten anpassen und personalisierte Erlebnisse bieten.
+
+- Autonomous Agents → Autonome Agenten
+- Self-operating AI systems... → Selbstständige KI-Systeme, die komplexe Aufgaben bewältigen, Arbeitsabläufe automatisieren und rund um die Uhr intelligente Entscheidungen treffen.
+
+- Voice Intelligence → Sprachintelligenz
+- Advanced voice AI solutions... → Fortschrittliche Sprach-KI-Lösungen für natürliche Gespräche, Sprachbefehle und nahtlose Mensch-Computer-Interaktion.
+
+Benefits Section:
+- Why Choose TechAgents → Warum TechAgenten wählen
+- The advantages that set us apart → Die Vorteile, die uns auszeichnen
+
+- Faster Delivery → Schnellere Lieferung
+- AI-powered development accelerates... → KI-gestützte Entwicklung beschleunigt Projektzeitpläne ohne Qualitätseinbußen.
+
+- Lower Costs → Niedrigere Kosten
+- Get enterprise-grade solutions... → Erhalten Sie Lösungen auf Unternehmensniveau zu einem Bruchteil der traditionellen Entwicklungskosten.
+
+- Smarter Solutions → Intelligentere Lösungen
+- Leverage cutting-edge AI... → Nutzen Sie modernste KI, um intelligente Systeme zu entwickeln, die lernen und sich anpassen.
+
+- Continuous Innovation → Kontinuierliche Innovation
+- Stay ahead with solutions... → Bleiben Sie mit Lösungen vorne, die sich mit den neuesten KI-Fortschritten weiterentwickeln.
+
+- Tailored Approach → Maßgeschneiderter Ansatz
+- Custom solutions designed... → Individuelle Lösungen, die speziell auf Ihre Geschäftsbedürfnisse und -ziele zugeschnitten sind.
+
+- Reliable Support → Zuverlässiger Support
+- Dedicated support team... → Engagiertes Support-Team, das sicherstellt, dass Ihre Systeme rund um die Uhr reibungslos laufen.
+
+Contact Section:
+- Let's Build Something Amazing → Lassen Sie uns etwas Erstaunliches schaffen
+- Ready to transform your business... → Bereit, Ihr Unternehmen mit KI zu transformieren? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.
+
+- Email → E-Mail
+- Location → Standort
+- Germany → Deutschland
+
+- Name → Name
+- Email → E-Mail
+- Company → Unternehmen
+- Message → Nachricht
+- Send Message → Nachricht senden

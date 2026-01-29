@@ -837,7 +837,7 @@ section {
 }
 
 .footer-brand p {
-    color: var(--color-grey-300);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: var(--space-sm);
 }
 
@@ -856,7 +856,7 @@ section {
 
 .footer-column a {
     display: block;
-    color: var(--color-grey-300);
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: var(--space-sm);
     transition: color var(--transition-fast);
 }
@@ -872,7 +872,7 @@ section {
 }
 
 .footer-bottom p {
-    color: var(--color-grey-400);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
 }
 
