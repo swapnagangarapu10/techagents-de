@@ -26,7 +26,7 @@ const translations = {
         'services-title': 'Our Services',
         'services-subtitle': 'Powered by cutting-edge AI technology',
         'service-1-title': 'Mobile Apps',
-        'service-1-desc': 'Smart, scalable iOS and Android apps infused with AI—enabling personalized experiences, real-time intelligence, and seamless integration with autonomous agents and backend systems.',
+        'service-1-desc': 'Smart, scalable iOS and Android apps infused with AI enabling personalized experiences, real-time intelligence, and seamless integration with autonomous agents and backend systems.',
         'service-2-title': 'AI Websites',
         'service-2-desc': 'Intelligent, responsive websites that adapt to user behavior and deliver personalized experiences powered by AI.',
         'service-3-title': 'Autonomous Agents',
