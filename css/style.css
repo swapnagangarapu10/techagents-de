@@ -275,7 +275,10 @@ a:hover {
     font-family: var(--font-headings);
     font-size: 28px;
     font-weight: var(--font-weight-bold);
-    color: #F5F5F7;
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-teal) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-links {
@@ -830,7 +833,15 @@ section {
 }
 
 .footer-brand h3 {
-    color: var(--color-white);
+    color: #F5F5F7;
+}
+
+.footer-brand .logo-text {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: #F5F5F7;
 }
 
 .footer-brand p {
