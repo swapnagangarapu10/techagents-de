@@ -252,6 +252,10 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md) 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
 }
 
 .logo {
@@ -262,14 +266,14 @@ a:hover {
 }
 
 .logo-image {
-    height: 45px;
+    height: 50px;
     width: auto;
     display: block;
 }
 
 .logo-text {
     font-family: var(--font-headings);
-    font-size: 24px;
+    font-size: 28px;
     font-weight: var(--font-weight-bold);
     background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-teal) 100%);
     -webkit-background-clip: text;
