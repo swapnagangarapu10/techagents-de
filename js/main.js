@@ -26,6 +26,10 @@ const translationMap = {
     '.services .section-title': 'services-title',
     '.services .section-subtitle': 'services-subtitle',
 
+    // Video Showcase
+    '.video-showcase .section-title': 'showcase-title',
+    '.video-showcase .section-subtitle': 'showcase-subtitle',
+
     // Benefits
     '.benefits .section-title': 'benefits-title',
     '.benefits .section-subtitle': 'benefits-subtitle',
@@ -38,7 +42,8 @@ const translationMap = {
     '.contact-item:last-child p': 'contact-location-value',
 
     // Footer
-    '.footer-brand p': 'footer-tagline'
+    '.footer-brand p': 'footer-tagline',
+    '.social-heading': 'footer-social-heading'
 };
 
 function switchLanguage(lang) {
@@ -107,6 +112,20 @@ function switchLanguage(lang) {
         if (desc) desc.textContent = translations[lang][`service-${index + 1}-desc`];
     });
 
+    // Update video showcase section
+    const showcaseTitle = document.querySelector('.video-showcase .section-title');
+    const showcaseSubtitle = document.querySelector('.video-showcase .section-subtitle');
+    if (showcaseTitle) showcaseTitle.textContent = translations[lang]['showcase-title'];
+    if (showcaseSubtitle) showcaseSubtitle.textContent = translations[lang]['showcase-subtitle'];
+
+    const videoCards = document.querySelectorAll('.video-card');
+    videoCards.forEach((card, index) => {
+        const title = card.querySelector('.video-overlay h3');
+        const desc = card.querySelector('.video-overlay p');
+        if (title) title.textContent = translations[lang][`video-${index + 1}-title`];
+        if (desc) desc.textContent = translations[lang][`video-${index + 1}-desc`];
+    });
+
     // Update benefits section
     const benefitsTitle = document.querySelector('.benefits .section-title');
     const benefitsSubtitle = document.querySelector('.benefits .section-subtitle');
@@ -159,6 +178,9 @@ function switchLanguage(lang) {
     const footerTagline = document.querySelector('.footer-brand p');
     if (footerTagline) footerTagline.textContent = translations[lang]['footer-tagline'];
 
+    const socialHeading = document.querySelector('.social-heading');
+    if (socialHeading) socialHeading.textContent = translations[lang]['footer-social-heading'];
+
     const footerColumns = document.querySelectorAll('.footer-column');
     if (footerColumns[0]) {
         const servicesHeader = footerColumns[0].querySelector('h4');
@@ -181,8 +203,12 @@ function switchLanguage(lang) {
     }
 
     if (footerColumns[2]) {
-        const connectHeader = footerColumns[2].querySelector('h4');
-        if (connectHeader) connectHeader.textContent = translations[lang]['footer-connect'];
+        const trustedByHeader = footerColumns[2].querySelector('h4');
+        if (trustedByHeader) trustedByHeader.textContent = translations[lang]['footer-trusted-by'];
+
+        const trustedByLinks = footerColumns[2].querySelectorAll('a');
+        if (trustedByLinks[0]) trustedByLinks[0].textContent = translations[lang]['footer-customers'];
+        if (trustedByLinks[1]) trustedByLinks[1].textContent = translations[lang]['footer-partners'];
     }
 
     const footerRights = document.querySelector('.footer-bottom p');
@@ -395,3 +421,165 @@ window.addEventListener('scroll', highlightNavigation);
 // ===================================
 console.log('%c🚀 TechAgents.de', 'font-size: 20px; font-weight: bold; color: #6366f1;');
 console.log('%cCrafting the Future of Intelligence', 'font-size: 14px; color: #8b5cf6;');
+
+// ===================================
+// Video Carousel Controls
+// ===================================
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselTrack = document.querySelector('.video-carousel-track');
+    const videoCards = document.querySelectorAll('.video-card');
+    const videos = document.querySelectorAll('.showcase-video');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+    const dotsContainer = document.getElementById('carouselDots');
+
+    if (!carouselTrack || videoCards.length === 0) return;
+
+    let currentIndex = 0;
+    let autoRotateInterval;
+    const totalVideos = videoCards.length;
+    const visibleCards = window.innerWidth > 1024 ? 3 : (window.innerWidth > 768 ? 2 : 1);
+    const maxIndex = Math.max(0, totalVideos - visibleCards);
+
+    // Create pagination dots
+    function createDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i <= maxIndex; i++) {
+            const dot = document.createElement('button');
+            dot.classList.add('carousel-dot');
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    // Update carousel position
+    function updateCarousel() {
+        const cardWidth = videoCards[0].offsetWidth;
+        const gap = parseFloat(getComputedStyle(carouselTrack).gap) || 24;
+        const offset = -(currentIndex * (cardWidth + gap));
+        carouselTrack.style.transform = `translateX(${offset}px)`;
+
+        // Update dots
+        document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+
+        // Pause all videos
+        videos.forEach(v => v.pause());
+    }
+
+    // Go to specific slide
+    function goToSlide(index) {
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        updateCarousel();
+        resetAutoRotate();
+    }
+
+    // Next slide
+    function nextSlide() {
+        currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+        updateCarousel();
+    }
+
+    // Previous slide
+    function prevSlide() {
+        currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+        updateCarousel();
+    }
+
+    // Auto-rotate carousel
+    function startAutoRotate() {
+        autoRotateInterval = setInterval(() => {
+            nextSlide();
+        }, 4000); // Rotate every 4 seconds
+    }
+
+    function stopAutoRotate() {
+        if (autoRotateInterval) {
+            clearInterval(autoRotateInterval);
+        }
+    }
+
+    function resetAutoRotate() {
+        stopAutoRotate();
+        startAutoRotate();
+    }
+
+    // Event listeners for navigation buttons
+    if (prevButton) {
+        prevButton.addEventListener('click', () => {
+            prevSlide();
+            resetAutoRotate();
+        });
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener('click', () => {
+            nextSlide();
+            resetAutoRotate();
+        });
+    }
+
+    // Play video on hover (desktop) or tap (mobile)
+    videoCards.forEach((card, index) => {
+        const video = card.querySelector('.showcase-video');
+
+        // Desktop: hover to play
+        card.addEventListener('mouseenter', () => {
+            if (video && window.innerWidth > 768) {
+                video.play().catch(err => console.log('Video play failed:', err));
+            }
+        });
+
+        card.addEventListener('mouseleave', () => {
+            if (video && window.innerWidth > 768) {
+                video.pause();
+            }
+        });
+
+        // Mobile: tap to play/pause
+        card.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                if (video.paused) {
+                    videos.forEach(v => v.pause());
+                    video.play().catch(err => console.log('Video play failed:', err));
+                } else {
+                    video.pause();
+                }
+            }
+        });
+
+        // Accessibility
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', `Video ${index + 1}: ${card.querySelector('.video-overlay h3').textContent}`);
+    });
+
+    // Pause auto-rotate when user hovers over carousel
+    const carouselWrapper = document.querySelector('.video-carousel-wrapper');
+    if (carouselWrapper) {
+        carouselWrapper.addEventListener('mouseenter', stopAutoRotate);
+        carouselWrapper.addEventListener('mouseleave', startAutoRotate);
+    }
+
+    // Handle window resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            const newVisibleCards = window.innerWidth > 1024 ? 3 : (window.innerWidth > 768 ? 2 : 1);
+            if (newVisibleCards !== visibleCards) {
+                location.reload(); // Reload to recalculate
+            } else {
+                updateCarousel();
+            }
+        }, 250);
+    });
+
+    // Initialize
+    createDots();
+    updateCarousel();
+    startAutoRotate();
+});

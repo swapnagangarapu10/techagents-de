@@ -26,13 +26,27 @@ const translations = {
         'services-title': 'Our Services',
         'services-subtitle': 'Powered by cutting-edge AI technology',
         'service-1-title': 'Mobile Apps',
-        'service-1-desc': 'AI-powered mobile apps for iOS and Android, seamlessly integrated with intelligent agents.',
+        'service-1-desc': 'AI-powered mobile apps for iOS and Android, seamlessly integrated with intelligent agents and backend systems.',
         'service-2-title': 'AI Websites',
         'service-2-desc': 'Intelligent, responsive websites that adapt to user behavior and deliver personalized experiences powered by AI.',
         'service-3-title': 'Autonomous Agents',
         'service-3-desc': 'Self-operating AI systems that handle complex tasks, automate workflows, and make intelligent decisions 24/7.',
         'service-4-title': 'Voice Intelligence',
         'service-4-desc': 'Advanced voice AI solutions for natural conversations, voice commands, and seamless human-computer interaction.',
+
+        // Video Showcase
+        'showcase-title': 'Our Work in Action',
+        'showcase-subtitle': 'Discover how AI transforms businesses',
+        'video-1-title': 'AI Automation',
+        'video-1-desc': 'Intelligent process optimization',
+        'video-2-title': 'Mobile Innovation',
+        'video-2-desc': 'Next-generation apps',
+        'video-3-title': 'Voice Intelligence',
+        'video-3-desc': 'Natural conversations',
+        'video-4-title': 'Data Analysis',
+        'video-4-desc': 'Intelligent insights',
+        'video-5-title': 'Cloud Integration',
+        'video-5-desc': 'Seamless connectivity',
 
         // Benefits Section
         'benefits-title': 'Why Choose TechAgents',
@@ -65,9 +79,13 @@ const translations = {
 
         // Footer
         'footer-tagline': 'Crafting the Future of Intelligence',
+        'footer-social-heading': 'Join The Conversation:',
         'footer-services': 'Services',
         'footer-company': 'Company',
         'footer-connect': 'Connect',
+        'footer-trusted-by': 'Trusted By',
+        'footer-customers': 'Customers',
+        'footer-partners': 'Partners',
         'footer-about': 'About',
         'footer-rights': 'All rights reserved.'
     },
@@ -97,13 +115,27 @@ const translations = {
         'services-title': 'Unsere Dienstleistungen',
         'services-subtitle': 'Angetrieben von modernster KI-Technologie',
         'service-1-title': 'Mobile Apps',
-        'service-1-desc': 'KI-gestützte Mobile Apps für iOS und Android, nahtlos integriert mit intelligenten Agenten.',
+        'service-1-desc': 'KI-gestützte mobile Apps für iOS und Android, nahtlos integriert mit intelligenten Agenten und Backend-Systemen.',
         'service-2-title': 'KI-Websites',
         'service-2-desc': 'Intelligente, responsive Websites, die sich an das Nutzerverhalten anpassen und personalisierte Erlebnisse durch KI bieten.',
         'service-3-title': 'Autonome Agenten',
         'service-3-desc': 'Selbstständig arbeitende KI-Systeme, die komplexe Aufgaben bewältigen, Arbeitsabläufe automatisieren und rund um die Uhr intelligente Entscheidungen treffen.',
         'service-4-title': 'Sprachintelligenz',
         'service-4-desc': 'Fortschrittliche Sprach-KI-Lösungen für natürliche Gespräche, Sprachbefehle und nahtlose Mensch-Computer-Interaktion.',
+
+        // Video Showcase
+        'showcase-title': 'Unsere Arbeit in Aktion',
+        'showcase-subtitle': 'Entdecken Sie, wie KI Unternehmen transformiert',
+        'video-1-title': 'KI-Automatisierung',
+        'video-1-desc': 'Intelligente Prozessoptimierung',
+        'video-2-title': 'Mobile Innovation',
+        'video-2-desc': 'Apps der nächsten Generation',
+        'video-3-title': 'Sprachintelligenz',
+        'video-3-desc': 'Natürliche Konversationen',
+        'video-4-title': 'Datenanalyse',
+        'video-4-desc': 'Intelligente Einblicke',
+        'video-5-title': 'Cloud Integration',
+        'video-5-desc': 'Nahtlose Konnektivität',
 
         // Benefits Section
         'benefits-title': 'Warum TechAgents wählen',
@@ -136,9 +168,13 @@ const translations = {
 
         // Footer
         'footer-tagline': 'Die Zukunft der Intelligenz gestalten',
+        'footer-social-heading': 'Werden Sie Teil der Konversation:',
         'footer-services': 'Dienstleistungen',
         'footer-company': 'Unternehmen',
         'footer-connect': 'Verbinden',
+        'footer-trusted-by': 'Vertrauen von',
+        'footer-customers': 'Kunden',
+        'footer-partners': 'Partner',
         'footer-about': 'Über uns',
         'footer-rights': 'Alle Rechte vorbehalten.'
     }
