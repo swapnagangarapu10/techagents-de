@@ -25,12 +25,14 @@ const translations = {
         // Services Section
         'services-title': 'Our Services',
         'services-subtitle': 'Powered by cutting-edge AI technology',
-        'service-1-title': 'AI Websites',
-        'service-1-desc': 'Intelligent, responsive websites that adapt to user behavior and deliver personalized experiences powered by AI.',
-        'service-2-title': 'Autonomous Agents',
-        'service-2-desc': 'Self-operating AI systems that handle complex tasks, automate workflows, and make intelligent decisions 24/7.',
-        'service-3-title': 'Voice Intelligence',
-        'service-3-desc': 'Advanced voice AI solutions for natural conversations, voice commands, and seamless human-computer interaction.',
+        'service-1-title': 'Mobile Apps',
+        'service-1-desc': 'Smart, scalable iOS and Android apps infused with AI—enabling personalized experiences, real-time intelligence, and seamless integration with autonomous agents and backend systems.',
+        'service-2-title': 'AI Websites',
+        'service-2-desc': 'Intelligent, responsive websites that adapt to user behavior and deliver personalized experiences powered by AI.',
+        'service-3-title': 'Autonomous Agents',
+        'service-3-desc': 'Self-operating AI systems that handle complex tasks, automate workflows, and make intelligent decisions 24/7.',
+        'service-4-title': 'Voice Intelligence',
+        'service-4-desc': 'Advanced voice AI solutions for natural conversations, voice commands, and seamless human-computer interaction.',
 
         // Benefits Section
         'benefits-title': 'Why Choose TechAgents',
@@ -94,12 +96,14 @@ const translations = {
         // Services Section
         'services-title': 'Unsere Dienstleistungen',
         'services-subtitle': 'Angetrieben von modernster KI-Technologie',
-        'service-1-title': 'KI-Websites',
-        'service-1-desc': 'Intelligente, responsive Websites, die sich an das Nutzerverhalten anpassen und personalisierte Erlebnisse durch KI bieten.',
-        'service-2-title': 'Autonome Agenten',
-        'service-2-desc': 'Selbstständig arbeitende KI-Systeme, die komplexe Aufgaben bewältigen, Arbeitsabläufe automatisieren und rund um die Uhr intelligente Entscheidungen treffen.',
-        'service-3-title': 'Sprachintelligenz',
-        'service-3-desc': 'Fortschrittliche Sprach-KI-Lösungen für natürliche Gespräche, Sprachbefehle und nahtlose Mensch-Computer-Interaktion.',
+        'service-1-title': 'Mobile Apps',
+        'service-1-desc': 'Intelligente, skalierbare iOS- und Android-Apps mit KI – für personalisierte Erlebnisse, Echtzeit-Intelligenz und nahtlose Integration mit autonomen Agenten und Backend-Systemen.',
+        'service-2-title': 'KI-Websites',
+        'service-2-desc': 'Intelligente, responsive Websites, die sich an das Nutzerverhalten anpassen und personalisierte Erlebnisse durch KI bieten.',
+        'service-3-title': 'Autonome Agenten',
+        'service-3-desc': 'Selbstständig arbeitende KI-Systeme, die komplexe Aufgaben bewältigen, Arbeitsabläufe automatisieren und rund um die Uhr intelligente Entscheidungen treffen.',
+        'service-4-title': 'Sprachintelligenz',
+        'service-4-desc': 'Fortschrittliche Sprach-KI-Lösungen für natürliche Gespräche, Sprachbefehle und nahtlose Mensch-Computer-Interaktion.',
 
         // Benefits Section
         'benefits-title': 'Warum TechAgents wählen',
