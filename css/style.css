@@ -572,6 +572,21 @@ section {
     margin-bottom: var(--space-md);
 }
 
+.problem-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FDB813 0%, #F59E0B 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    box-shadow: 0 4px 12px rgba(253, 184, 19, 0.3);
+}
+
 .problem-card h3,
 .solution-card h3 {
     font-family: var(--font-headings);
